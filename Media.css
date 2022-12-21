@@ -1,0 +1,192 @@
+body {
+    width: auto;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+
+
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    width: auto;
+    border: solid;
+    background-color: cadetblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    align-content: center;
+    font-size: 150px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.imagen {
+    display: flex;
+}
+
+#logo {
+    width: 75px;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    font-size: 35px;
+    border: solid aqua 8px;
+    color: rgb(126, 35, 126);
+}
+
+
+
+a:hover {
+    color: black;
+}
+
+.secciones {
+    width: 65%;
+    height: auto;
+    margin: 5px;
+    padding: 4px;
+    background-color: rgb(126, 35, 126);
+    border: solid black 2px;
+}
+
+.secciones>h1 {
+    border: solid black 2px;
+    background-color: rgb(126, 35, 126);
+    color: aqua;
+    font-size: 35px;
+    margin: 5px;
+    margin-left: 45px;
+    padding: 4px;
+}
+
+#menu {
+    color: blueviolet;
+    font-size: 30px;
+    background-color: darkturquoise;
+    margin: 5px;
+    margin-left: 45px;
+    padding: 4px;
+}
+
+#art1,
+#art2,
+#art3,
+#art4,
+#art5,
+#art6 {
+    margin: 5px;
+    padding: 4px;
+    border: solid black 2px;
+    height: auto;
+    background-color: rgb(126, 35, 126);
+    color: black;
+    font-size: 30px;
+    list-style-type: none;
+    text-align: center;
+}
+
+li:hover {
+    color: red;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: auto;
+    padding: 4px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: darkblue;
+    border: solid black 2px;
+}
+
+.aside {
+    background-color: darkblue;
+    border: solid black 2px;
+    font-size: 25px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.foot {
+    display: block;
+    align-self: stretch;
+    width: auto;
+    border: solid;
+    background-color: cadetblue;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hamburguesa {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: solid;
+}
+
+.hamburguesa:hover nav {
+    display: flex;
+}
+
+nav:hover>a {
+    display: flex;
+}
+
+@media screen and (max-width: 700px) {
+    .cabecera {
+        flex-direction: column;
+    }
+
+    .imagen {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contenido {
+        flex-direction: column;
+    }
+
+    .secciones {
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .hamburguesa {
+        display: block;
+    }
+
+
+
+    .enlaces a {
+        display: none;
+    }
+}
