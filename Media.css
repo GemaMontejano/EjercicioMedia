@@ -88,12 +88,7 @@ a:hover {
     padding: 4px;
 }
 
-#art1,
-#art2,
-#art3,
-#art4,
-#art5,
-#art6 {
+.articulo {
     margin: 5px;
     padding: 4px;
     border: solid black 2px;
@@ -101,12 +96,15 @@ a:hover {
     background-color: rgb(126, 35, 126);
     color: black;
     font-size: 30px;
-    list-style-type: none;
     text-align: center;
 }
 
 li:hover {
-    color: red;
+    color: rgb(240, 159, 240);
+}
+
+li {
+    list-style-type: none;
 }
 
 .aside {
@@ -149,11 +147,11 @@ li:hover {
     border: solid;
 }
 
-.hamburguesa:hover nav {
+.enlaces:hover .items {
     display: flex;
 }
 
-nav:hover>a {
+.items:hover {
     display: flex;
 }
 
@@ -168,7 +166,7 @@ nav:hover>a {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .contenido {
         flex-direction: column;
     }
@@ -181,12 +179,14 @@ nav:hover>a {
 
 @media screen and (max-width: 500px) {
     .hamburguesa {
-        display: block;
+        display: flex;
     }
 
 
 
-    .enlaces a {
+    #items {
         display: none;
     }
 }
+
+
